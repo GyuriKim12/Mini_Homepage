@@ -1,0 +1,13 @@
+.SidePanel {
+    display: flex;
+    gap: 10px;
+    margin-top: -10px;
+}
+
+.SideButton {
+    padding: 10px 10px;
+    width: 120px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}

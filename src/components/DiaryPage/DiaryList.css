@@ -1,0 +1,13 @@
+.DiaryList {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+}
+
+.diary_sen {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}

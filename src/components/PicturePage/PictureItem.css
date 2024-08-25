@@ -1,0 +1,30 @@
+.item_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.PictureItem {
+    flex: 1 0 auto;
+    max-width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.img_section {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_section img {
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

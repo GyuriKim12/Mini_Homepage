@@ -1,0 +1,8 @@
+.Item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+}

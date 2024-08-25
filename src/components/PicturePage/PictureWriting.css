@@ -1,0 +1,123 @@
+.PictureWriting {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    height: 80vh;
+    width: 700px;
+}
+
+.writing_header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.writing_header>button {
+    font-size: 20px;
+    width: 50px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+/* .writing_header>h4>span {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+} */
+
+.title {
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #5292ec;
+    transform: rotate(-8deg);
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.writing_header>h4 {
+    font-size: 19px;
+    text-align: center;
+    flex: 1;
+    margin: 0;
+    background-color: #c6daf7;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.writing_main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.writing_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.writing_image>button {
+    padding: 10px;
+    font-size: 15px;
+    width: 80%;
+    background-color: #f4eec1;
+    border-radius: 10px;
+}
+
+.writing_sen {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.writing_sen>h4 {
+    margin: 0;
+}
+
+.writing_sen>input {
+    flex: 1;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.writing_footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    width: 20%;
+    background-color: #c6defa;
+}
+
+.submit_true {
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    width: 20%;
+    background-color: #c6defa;
+    margin-left: 50px;
+}
+
+.submit_false {
+    display: none;
+}

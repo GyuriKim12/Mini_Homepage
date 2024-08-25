@@ -1,0 +1,286 @@
+.MainProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 200px;
+    min-height: 80vh;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.profileImage {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+
+button {
+    width: 100%;
+    margin-top: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 0px;
+    align-items: center;
+}
+
+
+
+.mood {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.mood>select {
+    background-color: white;
+    padding: 5px;
+    font-size: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.806);
+    border-radius: 5px;
+}
+
+.mood>select>option {
+    font-size: 20px;
+}
+
+.nickname {
+    display: flex;
+}
+
+.nickname>h3 {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(123, 166, 226);
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin: 0;
+    max-width: 7em;
+    text-align: center;
+    margin-bottom: -40px;
+    margin-left: -10px;
+    transform: rotate(-12deg);
+}
+
+.stateMessage>h3 {
+    color: white;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(157, 192, 240);
+    padding: 5px 0px;
+    border-radius: 50px;
+    margin: 0;
+    max-width: 7em;
+    text-align: center;
+    margin-bottom: -12px;
+    margin-left: -10px;
+    /* transform: rotate(-5deg); */
+}
+
+.introduce {
+    margin: 0;
+    padding: 15px 10px;
+
+    /* background-color: rgba(240, 194, 58, 0.731); */
+    border-radius: 5px;
+    flex: auto;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+/* .introduce>h4 {
+    padding-top: 10px;
+    font-weight: 200;
+} */
+
+.friendList {
+    border: 2px solid black;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.friendList>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    gap: 10px;
+    height: 70px;
+    overflow-x: auto;
+}
+
+.friend-item {
+    flex: 1 0 auto;
+    /* max-width: calc(33.33%); */
+    max-width: 2.5rem;
+    box-sizing: border-box;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgb(123, 166, 226);
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    /* 기본 텍스트 색상으로 설정 */
+    text-decoration: none;
+    /* 밑줄 제거 */
+}
+
+.dropdown-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-menu li {
+    padding: 2px;
+    font-size: 15px;
+}
+
+.dropdown-menu li:hover {
+    color: white;
+}
+
+/* 기본 모달 스타일 */
+.modal {
+    display: none;
+    /* 기본적으로 숨김 */
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: rgb(204, 225, 255);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* 모달 중앙 정렬 */
+.modal.modal-center .modal-dialog {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 모달 헤더 스타일링 */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 세로로 중앙 정렬 */
+}
+
+.modal-title {
+    width: 100%;
+    font-size: 20px;
+}
+
+.modal.modal-center {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal.modal-center:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog.modal-center {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Modal Header의 Close Button 스타일을 강제로 표시 */
+.modal-header .btn-close {
+    background: transparent;
+    border: none;
+    color: #000;
+    /* 버튼 색상 설정 (검정색 예시) */
+    font-size: 1.5rem;
+    /* 버튼 크기 설정 */
+    width: 10%;
+}
+
+.modal-header .btn-close::before {
+    content: '×';
+    /* X 문자 설정 */
+}
+
+.modal-body {
+    margin-top: -25px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-control {
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}

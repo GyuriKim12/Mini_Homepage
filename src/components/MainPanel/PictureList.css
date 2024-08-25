@@ -1,0 +1,63 @@
+.PictureList {
+    background-color: rgba(247, 228, 158, 0.548);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    height: 37vh;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.Picturetitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Picturetitle>h4 {
+    margin: 0;
+    background-color: rgb(123, 166, 226);
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-weight: 100;
+    margin-bottom: -20px;
+    z-index: 10;
+}
+
+
+.section {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.section>div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.pictureSection,
+.diarySection {
+    flex: 1;
+    overflow: auto;
+}
+
+.pictureSection>h4 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 100;
+    background-color: rgb(186, 210, 247);
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,32 @@
+.UpPanel {
+    padding: 5px 15px;
+    /* float: right; */
+    gap: 5px;
+    background-color: white;
+    margin-top: -10px;
+    border-radius: 5px;
+}
+
+.UpPanel>button {
+    background-color: white;
+    border: none;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    /* margin-left: 300px; */
+}
+
+/* .UpPanel>div>input {
+    margin-right: 5px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.UpPanel>div>button {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-size: 15px;
+} */

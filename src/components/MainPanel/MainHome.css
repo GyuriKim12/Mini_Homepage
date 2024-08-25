@@ -1,0 +1,29 @@
+.MainHome {
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    min-width: 700px;
+}
+
+/* .MainHome>section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.MainHome section>section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.MainImage,
+.PictureList {
+    flex: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+} */

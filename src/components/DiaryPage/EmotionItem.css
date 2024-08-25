@@ -1,0 +1,27 @@
+.EmotionItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.EmotionItem>img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.EmotionItem {
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+}
+
+.emotionID_1,
+.emotionID_2,
+.emotionID_3,
+.emotionID_4,
+.emotionID_5 {
+    border: 2px solid black;
+    font-weight: 600;
+}

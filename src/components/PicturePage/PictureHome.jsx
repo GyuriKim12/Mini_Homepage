@@ -46,7 +46,7 @@ const PictureHome = () => {
                     <option value={"latest"}>latest</option>
                     <option value={"oldest"}>oldest</option>
                 </select> */}
-                <button onClick={() => nav('/newPicture')}>✏️ 게시판 작성하기</button>
+                <button onClick={() => nav('/newPicture')}>✏️ 게시글 작성하기</button>
             </div>
 
             <div className='item_wrapper'>

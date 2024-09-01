@@ -74,7 +74,7 @@ const PictureList = () => {
                 <h4>다이어리</h4>
                 <h4>게시판</h4>
             </div>
-            <div className='section' style={{ overflow: 'auto' }}>
+            <div className='section'>
                 <div className='diarySection'>
                     {diary.map(item => <DiaryItem key={item.id} id={item.id} createdDate={item.createdDate} />)}
 

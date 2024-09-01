@@ -103,7 +103,6 @@ const PictureWriting = ({ data, edit }) => {
                     const isConfirmed = window.confirm('정말로 수정하겠습니까?');
                     if (isConfirmed) {
                         await update(ref(db, `pictures/${userId}/${newPicture.id}`), newPicture);
-
                     }
                     else {
                         return

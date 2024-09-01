@@ -88,6 +88,9 @@ const MessageHome = () => {
                 searchFriendByEmail(email);
             } else {
                 setFriend(null);
+                setInput({
+                    ...input, friendUID: "", friendDisplayName: "", friendphotoURL: ""
+                })
             }
         }, 500);
 
@@ -96,6 +99,14 @@ const MessageHome = () => {
     }
 
     const handleSubmit = async (e) => {
+        if (input.friendUID === "") {
+            window.alert('검색한 친구 정보가 존재하지 않습니다')
+            return
+        }
+        if (input.chatName === '') {
+            window.alert('친구 닉네임 및 체팅방 이름 둘다 입력을 완료해야합니다')
+            return
+        }
         const key = push(chatRoomsRef).key
         console.log(input)
         const newChatRoom = {
